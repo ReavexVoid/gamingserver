@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
-<title>Gaming-Server | Roblox & Discord Gaming Community</title>
-
-<meta name="description" content="Gaming-Server is a gaming and development community with a Roblox group and Discord server. Join us to play, build and grow together.">
-<meta name="keywords" content="gaming server, roblox gaming server, discord gaming server, gaming community">
-<meta name="robots" content="index, follow">
+<title>Gaming-Server</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- DEVICE SELECTOR -->
+<div id="deviceSelector">
+    <div class="selector-box">
+        <h2>How are you visiting?</h2>
+        <button onclick="setDevice('mobile')">Phone</button>
+        <button onclick="setDevice('desktop')">Desktop</button>
+    </div>
+</div>
 
 <header>
     <h1>Gaming-Server</h1>
@@ -27,10 +31,9 @@
 </nav>
 
 <section>
-    <h2>About Gaming-Server</h2>
+    <h2>About</h2>
     <p>
         Gaming-Server is a community focused on gaming, development and teamwork.
-        We manage servers, work on projects and build a fair and active community.
     </p>
 </section>
 
@@ -40,5 +43,6 @@
     </a>
 </footer>
 
+<script src="device.js"></script>
 </body>
 </html>
