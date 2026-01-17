@@ -3,18 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Gaming-Server | Projects</title>
-
-<meta name="description" content="Current and upcoming projects by the Gaming-Server community.">
-<meta name="robots" content="index, follow">
-
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div id="deviceSelector">
+    <div class="selector-box">
+        <h2>How are you visiting?</h2>
+        <button onclick="setDevice('mobile')">Phone</button>
+        <button onclick="setDevice('desktop')">Desktop</button>
+    </div>
+</div>
+
 <header>
-    <h1>Projects</h1>
-    <p>What we are working on</p>
+    <h1>Projects & Fun</h1>
 </header>
 
 <nav>
@@ -25,10 +28,15 @@
 </nav>
 
 <section>
-    <p>
-        We are working on several gaming and development-related projects.
-        Some projects are private or still in early development stages.
-    </p>
+    <h2>Current Projects</h2>
+    <p>Game development, Roblox systems, community events.</p>
+
+    <h2>Fun Stuff</h2>
+    <ul>
+        <li>Weekly events</li>
+        <li>Challenges</li>
+        <li>Community ideas (coming soon)</li>
+    </ul>
 </section>
 
 <footer>
@@ -37,5 +45,6 @@
     </a>
 </footer>
 
+<script src="device.js"></script>
 </body>
 </html>
