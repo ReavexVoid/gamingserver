@@ -1,29 +1,45 @@
-/* BASE */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0e1625;
+    background: linear-gradient(180deg, #020617, #0b1220);
     color: #e5e7eb;
+    font-size: 16px;
 }
 
-/* HEADER */
 header {
-    background-color: #0a1020;
+    background: linear-gradient(180deg, #020617, #020617cc);
     padding: 40px 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    color: #38bdf8;
+}
+
+header p {
+    margin-top: 10px;
+    color: #9ca3af;
 }
 
 nav {
     background-color: #020617;
     padding: 12px;
     text-align: center;
+    border-bottom: 1px solid #0f172a;
 }
 
 nav a {
     color: #e5e7eb;
-    margin: 0 12px;
+    margin: 0 14px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 nav a:hover {
@@ -33,25 +49,46 @@ nav a:hover {
 section {
     max-width: 1000px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 50px 20px;
+}
+
+section h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+section p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section li {
+    margin: 8px 0;
+    color: #d1d5db;
 }
 
 footer {
     background-color: #020617;
     text-align: center;
     padding: 20px;
+    border-top: 1px solid #0f172a;
 }
 
 footer a {
     color: #9ca3af;
     text-decoration: none;
+    font-size: 0.95rem;
 }
 
 footer a:hover {
     color: #38bdf8;
 }
 
-/* DEVICE SELECTOR OVERLAY */
 #deviceSelector {
     position: fixed;
     inset: 0;
@@ -65,8 +102,11 @@ footer a:hover {
 .selector-box {
     background-color: #020617;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
+    width: 90%;
+    max-width: 320px;
+    border: 1px solid #0f172a;
 }
 
 .selector-box h2 {
@@ -75,11 +115,13 @@ footer a:hover {
 }
 
 .selector-box button {
-    margin: 10px;
-    padding: 12px 18px;
+    width: 100%;
+    margin: 8px 0;
+    padding: 14px;
     font-weight: bold;
+    font-size: 1rem;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     background-color: #38bdf8;
     color: #020617;
@@ -89,17 +131,57 @@ footer a:hover {
     background-color: #22d3ee;
 }
 
-/* MOBILE MODE */
+body.desktop header h1 {
+    font-size: 2.6rem;
+}
+
+body.mobile {
+    font-size: 18px;
+}
+
+body.mobile header {
+    padding: 30px 16px;
+}
+
 body.mobile header h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+}
+
+body.mobile header p {
+    font-size: 1.1rem;
 }
 
 body.mobile nav a {
     display: block;
     margin: 10px 0;
+    font-size: 1.1rem;
 }
 
-/* DESKTOP MODE */
-body.desktop header h1 {
-    font-size: 2.6rem;
+body.mobile section {
+    padding: 40px 16px;
+}
+
+body.mobile section h2 {
+    font-size: 1.6rem;
+}
+
+body.mobile section p,
+body.mobile section li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+body.mobile footer {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
 }
