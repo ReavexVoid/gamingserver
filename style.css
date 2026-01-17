@@ -11,7 +11,6 @@ body {
 }
 
 header {
-    background: linear-gradient(180deg, #020617, #020617cc);
     padding: 40px 20px;
     text-align: center;
 }
@@ -31,7 +30,6 @@ nav {
     background-color: #020617;
     padding: 12px;
     text-align: center;
-    border-bottom: 1px solid #0f172a;
 }
 
 nav a {
@@ -39,11 +37,6 @@ nav a {
     margin: 0 14px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    color: #38bdf8;
 }
 
 section {
@@ -58,35 +51,20 @@ section h2 {
     font-size: 1.8rem;
 }
 
-section p {
-    color: #d1d5db;
-    line-height: 1.6;
-}
-
-section ul {
-    padding-left: 20px;
-}
-
+section p,
 section li {
-    margin: 8px 0;
-    color: #d1d5db;
+    line-height: 1.6;
 }
 
 footer {
     background-color: #020617;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #0f172a;
 }
 
 footer a {
     color: #9ca3af;
     text-decoration: none;
-    font-size: 0.95rem;
-}
-
-footer a:hover {
-    color: #38bdf8;
 }
 
 #deviceSelector {
@@ -106,12 +84,6 @@ footer a:hover {
     text-align: center;
     width: 90%;
     max-width: 320px;
-    border: 1px solid #0f172a;
-}
-
-.selector-box h2 {
-    margin-bottom: 20px;
-    color: #38bdf8;
 }
 
 .selector-box button {
@@ -119,7 +91,6 @@ footer a:hover {
     margin: 8px 0;
     padding: 14px;
     font-weight: bold;
-    font-size: 1rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -127,28 +98,8 @@ footer a:hover {
     color: #020617;
 }
 
-.selector-box button:hover {
-    background-color: #22d3ee;
-}
-
-body.desktop header h1 {
-    font-size: 2.6rem;
-}
-
 body.mobile {
     font-size: 18px;
-}
-
-body.mobile header {
-    padding: 30px 16px;
-}
-
-body.mobile header h1 {
-    font-size: 2.4rem;
-}
-
-body.mobile header p {
-    font-size: 1.1rem;
 }
 
 body.mobile nav a {
@@ -157,31 +108,13 @@ body.mobile nav a {
     font-size: 1.1rem;
 }
 
-body.mobile section {
-    padding: 40px 16px;
-}
-
-body.mobile section h2 {
-    font-size: 1.6rem;
-}
-
-body.mobile section p,
-body.mobile section li {
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-body.mobile footer {
-    font-size: 0.95rem;
-}
-
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2.3rem;
+    body {
+        font-size: 18px;
     }
 
     nav a {
         display: block;
-        margin: 8px 0;
+        margin: 10px 0;
     }
 }
