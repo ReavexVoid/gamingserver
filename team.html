@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Gaming-Server | Roles</title>
-
-<meta name="description" content="Staff roles and available slots in the Gaming-Server community.">
-<meta name="robots" content="index, follow">
-
+<title>Gaming-Server | Team</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div id="deviceSelector">
+    <div class="selector-box">
+        <h2>How are you visiting?</h2>
+        <button onclick="setDevice('mobile')">Phone</button>
+        <button onclick="setDevice('desktop')">Desktop</button>
+    </div>
+</div>
+
 <header>
-    <h1>Roles & Slots</h1>
-    <p>Staff structure of Gaming-Server</p>
+    <h1>Our Team</h1>
 </header>
 
 <nav>
@@ -25,28 +28,17 @@
 </nav>
 
 <section>
-    <div class="card-grid">
-        <div class="card">
-            <h3>Owner</h3>
-            <p>Current owner: <strong>Fylu</strong></p>
-            <p>Slots: 1</p>
-        </div>
+    <h2>Leadership</h2>
+    <ul>
+        <li><strong>Owner:</strong> Fylu (1 max)</li>
+        <li><strong>Developer:</strong> Reavex (1 max)</li>
+    </ul>
 
-        <div class="card">
-            <h3>Developer</h3>
-            <p>Slots: 1</p>
-        </div>
-
-        <div class="card">
-            <h3>Moderator</h3>
-            <p>Slots: 1-2</p>
-        </div>
-
-        <div class="card">
-            <h3>Admin</h3>
-            <p>Slots: 2</p>
-        </div>
-    </div>
+    <h2>Staff</h2>
+    <ul>
+        <li><strong>Admin:</strong> 2 max</li>
+        <li><strong>Moderator:</strong> 1–2 max</li>
+    </ul>
 </section>
 
 <footer>
@@ -55,5 +47,6 @@
     </a>
 </footer>
 
+<script src="device.js"></script>
 </body>
 </html>
