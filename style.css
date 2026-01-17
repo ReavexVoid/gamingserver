@@ -1,3 +1,4 @@
+/* BASE */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,19 +6,11 @@ body {
     color: #e5e7eb;
 }
 
+/* HEADER */
 header {
     background-color: #0a1020;
     padding: 40px 20px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    color: #9ca3af;
 }
 
 nav {
@@ -43,22 +36,6 @@ section {
     padding: 40px 20px;
 }
 
-h2 {
-    color: #38bdf8;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background-color: #020617;
-    padding: 20px;
-    border-radius: 8px;
-}
-
 footer {
     background-color: #020617;
     text-align: center;
@@ -72,5 +49,57 @@ footer a {
 
 footer a:hover {
     color: #38bdf8;
-    text-decoration: underline;
+}
+
+/* DEVICE SELECTOR OVERLAY */
+#deviceSelector {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(2, 6, 23, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.selector-box {
+    background-color: #020617;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.selector-box h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.selector-box button {
+    margin: 10px;
+    padding: 12px 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #38bdf8;
+    color: #020617;
+}
+
+.selector-box button:hover {
+    background-color: #22d3ee;
+}
+
+/* MOBILE MODE */
+body.mobile header h1 {
+    font-size: 2rem;
+}
+
+body.mobile nav a {
+    display: block;
+    margin: 10px 0;
+}
+
+/* DESKTOP MODE */
+body.desktop header h1 {
+    font-size: 2.6rem;
 }
